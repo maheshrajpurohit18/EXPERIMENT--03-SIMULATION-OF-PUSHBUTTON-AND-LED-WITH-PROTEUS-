@@ -72,18 +72,27 @@ We are now at the last part of step by step guide on how to simulate STM32 proje
 
 ## STM 32 CUBE PROGRAM :
 
+```
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+  {
+	  if((GPIO_Pin == GPIO_PIN_1))
+	  {
+		  HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_2);
+	  }
 
-
+  }
+```
 
 ## Output screen shots of proteus  :
 
-
+![Screenshot 2024-09-06 134942](https://github.com/user-attachments/assets/1a585c46-487f-4314-b545-e73cbcf55565)
 
 
 ## Proteus layout(Add pdf screen shot of circuit here)
  
  
- 
+ ![Screenshot 2024-09-06 135123](https://github.com/user-attachments/assets/3aa5bfd5-c901-497f-9e03-c1dacf4cb59a)
+
  
 ## Result :
 Interfacing a digital output and digital input  with ARM microcontroller are simulated in proteus and the results are verified.
